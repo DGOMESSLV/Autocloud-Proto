@@ -1,0 +1,99 @@
+/*
+ * This file contains all colors classes and variables.
+ *
+ * Created at: 01/22/2022
+ * Author: Diego Gomes <dgs190plc@outlook>
+ */
+
+/* Variables definitions */
+:root {
+    --lighter-gray: #333333;
+    --medium-gray: #212121;
+    --gray: #1A1A1A;
+    --dark-gray: #0D0D0D;
+    --bold-gray: #0E0E0E;
+
+    --bs-primary-rgb: 255, 111, 0;
+    --bs-success-rgb: 184, 255, 95;
+    --bs-danger-rgb: 255, 98, 98;
+    --bs-warning-rgb: 255, 204, 0;
+    --bs-info-rgb: 93, 95, 239;
+    --bs-secondary-rgb: 38, 38, 38;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: rgb(var(--bs-primary-rgb)) !important;
+    color: #ffffff !important;
+}
+
+.btn-outline-primary {
+    border-color: rgb(var(--bs-primary-rgb)) !important;
+    color: rgb(var(--bs-primary-rgb)) !important;
+}
+
+.btn-primary:focus,
+.btn-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .5) !important;
+}
+
+.btn-secondary,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active {
+    background-color: var(--lighter-gray) !important;
+    border-color: var(--lighter-gray);
+    color: #c0c0c0 !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    border-color: rgb(var(--bs-primary-rgb));
+    background: rgb(var(--bs-primary-rgb)) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.btn-outline-secondary {
+    border-color: var(--lighter-gray)!important;
+    color: var(--lighter-gray) !important;
+}
+
+.btn-success,
+.btn-outline-success:hover,
+.btn-outline-success:focus,
+.btn-outline-success:active {
+    background-color: rgb(var(--bs-success-rgb)) !important;
+    color: #ffffff;
+    border: 0;
+}
+
+.btn-outline-success {
+    border-color: rgb(var(--bs-success-rgb)) !important;
+    color: rgb(var(--bs-success-rgb)) !important;
+}
+
+.btn-success:focus,
+.btn-success:active,
+.btn-outline-success:focus,
+.btn-outline-success:active {
+    box-shadow: 0 0 0 .25rem rgba(var(--bs-success-rgb), .5) !important;
+}
+
+/* Backgrounds */
+.bg-medium-gray {
+    background: var(--gray);
+}
+
+.bg-lighter-gray {
+    background: var(--lighter-gray);
+}
+
+.text-lighter {
+    color: #c0c0c0;
+}
