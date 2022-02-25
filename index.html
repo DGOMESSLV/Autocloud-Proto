@@ -282,12 +282,66 @@
         </ul>
     </aside>
 
+    <div class="col-12 mt-lg-4 header-pane">
+        <!-- Por causa do modelo como escolheram o carousel, cada item precisará conter além da nova imagem ao deslizar, os 3 ultimos itens do slide anterior -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <i class="fa-solid fa-camera camera-icon"></i>
+                <button type="button" class="d-none" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" class="d-none" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" class="d-none" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-3 px-0">
+                            <img src="./assets/images/top-cars/a.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-3 px-0">
+                            <img src="./assets/images/top-cars/b.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-3 px-0">
+                            <img src="./assets/images/top-cars/c.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-3 px-0">
+                            <img src="./assets/images/top-cars/d.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3 px-0">
+                            <img src="./assets/images/top-cars/b.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-3 px-0">
+                            <img src="./assets/images/top-cars/c.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-3 px-0">
+                            <img src="./assets/images/top-cars/d.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-3 px-0">
+                            <img src="./assets/images/top-cars/f.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
     <!-- Page content -->
     <div class="container pb-3 mt-5 pt-5 pt-lg-0">
         <div class="row mt-lg-5 pt-lg-5">
-            <div class="col-12 mt-lg-4">
-                <img src="./assets/images/top-panel-cars.png" width="100%" alt="" style="min-height: 35px" class="rounded mt-1 img-fluid header-img">
-            </div>
         </div>
         <!-- Panel image -->
 
