@@ -247,6 +247,7 @@ body {
 }
 
 .tab-pane .form-control,
+.select2-container--default .select2-selection--single,
 #fipe-modal .form-control {
     background: transparent;
     color: #c0c0c0;
@@ -1067,4 +1068,44 @@ body {
 .carousel-control-prev-icon:hover {
     background-color: rgb(var(--bs-primary-rgb));
     color: #fff;
+}
+
+.select2-selection__arrow {
+    display: none;
+}
+
+
+.select2-selection__rendered {
+    color: #c0c0c0 !important;
+    position: relative;
+    top: 4px;
+}
+
+.select2-dropdown {
+    border-color: #333333;
+    border-radius: 0 !important;
+}
+
+.select2-results__options {
+    background: #333333;
+}
+
+.select2-container--default .select2-results__option--disabled {
+    display: none;
+}
+
+.select2-container--default .select2-results__option--selected,
+.select2-container--default .select2-results__option--selected:hover {
+    color: #c0c0c0 !important;
+    background: rgb(var(--bs-primary-rgb)) !important;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    color: #c0c0c0 !important;
+    background: #3D3630;
+}
+
+.select2-results__option--selectable {
+    color: #c0c0c0;
+    padding: 10px !important;
 }

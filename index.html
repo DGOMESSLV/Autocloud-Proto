@@ -12,6 +12,7 @@
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="./assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./assets/node_modules/select2/dist/css/select2.min.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -539,7 +540,7 @@
 
                                             <div class="px-2 pt-0 col-xs-6 col-xl-3 to-up">
                                                 <label for="">Ano modelo</label>
-                                                <select class="form-control">
+                                                <select class="form-control select2" data-select2-search="disabled">
                                                     <option disabled selected></option>
                                                     <option value="2021">2021</option>
                                                     <option value="2020">2020</option>
@@ -549,12 +550,12 @@
                                                     <option value="2016">2016</option>
                                                     <option value="2015">2015</option>
                                                 </select>
-                                                <i class="fas fa-chevron-down input-after"></i>
+                                                <i class="fas fa-chevron-down input-after select2-arrow"></i>
                                             </div>
 
                                             <div class="px-2 pt-0 col-xs-6 col-xl-3 to-up">
                                                 <label for="">Ano fab</label>
-                                                <select class="form-control">
+                                                <select class="form-control select2" data-select2-search="disabled">
                                                     <option disabled selected></option>
                                                     <option value="2021">2021</option>
                                                     <option value="2020">2020</option>
@@ -564,7 +565,7 @@
                                                     <option value="2016">2016</option>
                                                     <option value="2015">2015</option>
                                                 </select>
-                                                <i class="fas fa-chevron-down input-after"></i>
+                                                <i class="fas fa-chevron-down input-after select2-arrow"></i>
                                             </div>
 
                                             <div class="px-2 pt-0 col-12 to-up to-up-2">
@@ -580,7 +581,7 @@
 
                                             <div class="px-2 pt-0 col-xs-6 col-md-3 to-up to-up-3">
                                                 <label for="">Estado</label>
-                                                <select class="form-control">
+                                                <select class="form-control select2" data-select2-search="disabled">
                                                     <option disabled selected></option>
                                                     <option value="AC">Acre</option>
                                                     <option value="AL">Alagoas</option>
@@ -610,7 +611,7 @@
                                                     <option value="SE">Sergipe</option>
                                                     <option value="TO">Tocantins</option>
                                                 </select>
-                                                <i class="fas fa-chevron-down input-after"></i>
+                                                <i class="fas fa-chevron-down input-after select2-arrow"></i>
 
                                             </div>
 
@@ -629,37 +630,37 @@
 
                                             <div class="px-2 col-xs-12 col-xl-6 to-up to-up-4">
                                                 <label for="">Combustível</label>
-                                                <select class="form-control">
+                                                <select class="form-control select2" data-select2-search="disabled">
                                                     <option disabled selected></option>
                                                     <option value="1">Tipo 1</option>
                                                     <option value="2">Tipo 2</option>
                                                     <option value="3">Tipo 3</option>
                                                 </select>
-                                                <i class="fas fa-chevron-down input-after"></i>
+                                                <i class="fas fa-chevron-down input-after select2-arrow"></i>
 
                                             </div>
 
                                             <div class="px-2 pt-0 col-xs-6 col-xl-3 to-up to-up-4">
                                                 <label for="">Cor</label>
-                                                <select class="form-control">
+                                                <select class="form-control select2" data-select2-search="disabled">
                                                     <option disabled selected></option>
                                                     <option value="1">Cor 1</option>
                                                     <option value="2">Cor 2</option>
                                                     <option value="3">Cor 3</option>
                                                 </select>
-                                                <i class="fas fa-chevron-down input-after"></i>
+                                                <i class="fas fa-chevron-down input-after select2-arrow"></i>
 
                                             </div>
 
                                             <div class="px-2 pt-0 col-xs-6 col-xl-3 to-up to-up-4">
                                                 <label for="">Tonalidade</label>
-                                                <select class="form-control">
+                                                <select class="form-control select2" data-select2-search="disabled">
                                                     <option disabled selected></option>
                                                     <option value="1">Tonalidade 1</option>
                                                     <option value="2">Tonalidade 2</option>
                                                     <option value="3">Tonalidade 3</option>
                                                 </select>
-                                                <i class="fas fa-chevron-down input-after"></i>
+                                                <i class="fas fa-chevron-down input-after select2-arrow"></i>
 
                                             </div>
 
@@ -675,13 +676,13 @@
 
                                             <div class="px-2 col-xs-12 col-xl-6 to-up to-up-5">
                                                 <label for="">Câmbio</label>
-                                                <select class="form-control">
+                                                <select class="form-control select2" data-select2-search="disabled">
                                                     <option disabled selected></option>
                                                     <option value="1">Tipo 1</option>
                                                     <option value="2">Tipo 2</option>
                                                     <option value="3">Tipo 3</option>
                                                 </select>
-                                                <i class="fas fa-chevron-down input-after"></i>
+                                                <i class="fas fa-chevron-down input-after select2-arrow"></i>
 
                                             </div>
 
@@ -1056,13 +1057,13 @@
 
                                         <div class="col-xs-12 col-md-7 px-3 pb-4" style="position: relative; left: 16px">
                                             <label for="">Loja Shopping</label>
-                                            <select class="form-control">
+                                            <select class="form-control select2" data-select2-search="disabled">
                                                 <option value=""></option>
                                                 <option value="webmotors">Webmotors</option>
                                                 <option value="shopping">Shopping</option>
                                                 <option value="feira">Feira</option>
                                             </select>
-                                            <i class="input-after fas fa-chevron-down"></i>
+                                            <i class="input-after fas fa-chevron-down select2-arrow"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -3221,6 +3222,7 @@
     <script src="./assets/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./assets/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/node_modules/select2/dist/js/select2.min.js"></script>
 
     <!-- Javascript files -->
     <script src="./js/app.js"></script>

@@ -624,3 +624,12 @@
     background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 111, 0, 1%29'/%3e%3c/svg%3e") right center no-repeat !important;
     border-color: rgba(255, 111, 0, 1) !important;
 }
+
+label {
+    z-index: 2
+}
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple,
+.select2-container--default.select2-container--open.select2-container--bellow .select2-selection--single, .select2-container--default.select2-container--open.select2-container--bellow .select2-selection--multiple {
+    border-color: rgb(var(--bs-primary-rgb));
+}

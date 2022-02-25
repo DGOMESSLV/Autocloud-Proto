@@ -26,6 +26,16 @@ function showAlertModal(text) {
 }
 
 $(document).ready(() => {
+    $('.select2').each(function () {
+        $(this).select2({
+            minimumResultsForSearch: $(this).attr('data-select2-search') == 'disabled' ? -1 : 0
+        })
+    });
+
+    $('.select2-arrow').click(function () {
+        $(this).prev().prev().select2('open');
+    })
+
     $('.desktop-sidebar').on('mouseover', function () {
         $(this).addClass('expanded', '2s');
 
@@ -238,5 +248,5 @@ $(document).ready(() => {
 
     $('.form-switch .form-check-input').click(function () {
         $(this).toggleClass('checked')
-    })
+    });
 });
