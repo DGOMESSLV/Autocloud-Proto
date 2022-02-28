@@ -249,4 +249,18 @@ $(document).ready(() => {
     $('.form-switch .form-check-input').click(function () {
         $(this).toggleClass('checked')
     });
+
+    $('.navbar-toggler').click(() => {
+        let screenWidth = $(window).width();
+
+        if (screenWidth >= 1200 && screenWidth <= 1800) {  // Media screen
+            if (typeof $('.navbar').attr('style') === 'undefined') {
+                $('body').css('overflow', 'hidden');
+                $('.navbar').css('overflow', 'auto');
+            } else {
+                $('body').removeAttr('style');
+                $('.navbar').removeAttr('style');
+            }
+        }
+    })
 });

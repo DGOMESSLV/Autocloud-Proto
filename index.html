@@ -114,8 +114,8 @@
                             style="font-size: 14px"
                             id="user-profile-toggler"
                             role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
+                            data-bs-toggle="modal"
+                            data-bs-target="#user-profile-modal"
                         >
                             Jotta Veículos
                         </a>
@@ -342,7 +342,7 @@
 
     <!-- Page content -->
     <div class="container pb-3 mt-5 pt-5 pt-lg-0">
-        <div class="row mt-lg-5 pt-lg-5">
+        <div class="row">
         </div>
         <!-- Panel image -->
 
@@ -2382,22 +2382,22 @@
                     <!-- Lances tab -->
                     <div class="tab-pane fade" role="tabpanel" id="lancamentos-tab">
                         <div class="row mt-4">
-                            <div class="col-12 d-flex flex-column px-4">
+                            <div class="col-12 d-flex flex-column px-3">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="text-light mb-0 font-w-600">Visão rápida</h5>
+                                    <h5 class="text-light mb-0 font-w-500 mt-2">Visão rápida</h5>
                                     <i class="help-modal-toggler fas fa-question-circle ps-2 text-lighter"></i>
                                 </div>
 
-                                <h6 class="text-lighter mb-0">Visualize os lançamentos totais do veículo</h6>
+                                <h6 class="text-lighter font-w-400 mb-0">Visualize os lançamentos totais do veículo</h6>
                             </div>
                         </div>
 
-                        <div class="row mt-5 pt-2" style="position: relative;width: 104%;right:  2% !important;margin-left: 0 !important;">
-                            <div class="col-xs-6 col-md-3 px-3 before-danger no-before">
+                        <div class="row mt-5 pt-4" style="position: relative;width: 104%;right:  2% !important;margin-left: 0 !important;">
+                            <div class="ps-0 lancamentos-block-a col-xs-6 col-md-3 px-3 before-danger no-before">
                                 <div class="rounded h-100 pt-3 pb-4 px-4 d-flex flex-column"  style="background: var(--gray);">
                                     <div class="w-100 d-flex justify-content-between pt-4">
                                         <div class="d-flex flex-column">
-                                            <h5 class="text-lighter font-w-600 mb-0 font-small">Custos</h5>
+                                            <h5 class="text-lighter font-w-500 mb-0 font-small">Custos</h5>
 
                                             <span class="font-w-500 text-danger" style="position: relative; bottom: 2px;">R$ 43.500,00</span>
                                         </div>
@@ -2405,11 +2405,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-6 col-md-3 px-3 before-danger no-before">
+                            <div class="ps-0 lancamentos-block-a col-xs-6 col-md-3 px-3 before-danger no-before">
                                 <div class="rounded h-100 pt-3 pb-4 px-4 d-flex flex-column"  style="background: var(--gray);">
                                     <div class="w-100 d-flex justify-content-between pt-4">
                                         <div class="d-flex flex-column">
-                                            <h5 class="text-lighter font-w-600 mb-0 font-small">Receitas</h5>
+                                            <h5 class="text-lighter font-w-500 mb-0 font-small">Receitas</h5>
 
                                             <span class="font-w-500 text-success" style="position: relative; bottom: 2px;">R$ 48.600,00</span>
                                         </div>
@@ -2417,11 +2417,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-6 col-md-3 px-3 before-danger no-before">
+                            <div class="ps-0 lancamentos-block-a col-xs-6 col-md-3 px-3 before-danger no-before">
                                 <div class="rounded h-100 pt-3 pb-4 px-4 d-flex flex-column"  style="background: var(--gray);">
                                     <div class="w-100 d-flex justify-content-between pt-4">
                                         <div class="d-flex flex-column">
-                                            <h5 class="text-lighter font-w-600 mb-0 font-small">Pós venda</h5>
+                                            <h5 class="text-lighter font-w-500 mb-0 font-small">Pós venda</h5>
 
                                             <span class="font-w-500 text-danger" style="position: relative; bottom: 2px;">R$ 800,00</span>
                                         </div>
@@ -2429,11 +2429,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-6 col-md-3 px-3 before-danger no-before">
+                            <div class="ps-0 pe-0 lancamentos-block-a col-xs-6 col-md-3 px-3 before-danger no-before">
                                 <div class="rounded h-100 pt-3 pb-4 px-4 d-flex flex-column" style="background: var(--gray);">
                                     <div class="w-100 d-flex justify-content-between pt-4">
                                         <div class="d-flex flex-column">
-                                            <h5 class="text-lighter font-w-600 mb-0 font-small">Margem</h5>
+                                            <h5 class="text-lighter font-w-500 mb-0 font-small">Margem</h5>
 
                                             <span class="font-w-500" style="position: relative; bottom: 2px; color: #00C2FF">R$ 5.100,00</span>
                                         </div>
@@ -2445,16 +2445,16 @@
                         <div class="row mt-5 pt-2">
                             <div class="col-12 d-flex flex-column px-4">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="text-light mb-0 font-w-600">Detalhamento</h5>
+                                    <h5 class="text-light mb-0 font-w-500">Detalhamento</h5>
                                     <i class="help-modal-toggler fas fa-question-circle ps-2 text-lighter"></i>
                                 </div>
 
-                                <h6 class="text-lighter mb-0">Entenda todos os valores de cada veículo</h6>
+                                <h6 class="text-lighter mb-0 font-w-400">Entenda todos os valores de cada veículo</h6>
                             </div>
                         </div>
 
-                        <div class="row mt-5 pt-2">
-                            <div class="row rounded bg-medium-gray py-4 px-5 with-hidden mb-4 launch-container">
+                        <div class="row mt-5 pt-2 w-xs-104-p">
+                            <div class="lancamentos-block-b row rounded bg-medium-gray py-4 px-5 with-hidden mb-4 launch-container">
                                 <div class="col-12 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
                                         <h5 class="text-danger mb-0">Custos</h5>
@@ -2624,7 +2624,7 @@
                                 </div>
                             </div>
 
-                            <div class="row rounded bg-medium-gray py-4 px-5 with-hidden mb-4 launch-container">
+                            <div class="lancamentos-block-b row rounded bg-medium-gray py-4 px-5 with-hidden mb-4 launch-container">
                                 <div class="col-12 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
                                         <h5 class="text-success mb-0">Receitas</h5>
@@ -2750,7 +2750,7 @@
                                 </div>
                             </div>
 
-                            <div class="row rounded bg-medium-gray py-4 px-5 with-hidden mb-4 launch-container">
+                            <div class="lancamentos-block-b row rounded bg-medium-gray py-4 px-5 with-hidden mb-4 launch-container">
                                 <div class="col-12 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
                                         <h5 class="text-lighter mb-0">Pós Venda</h5>
@@ -2857,7 +2857,7 @@
                             </div>
 
 
-                            <div class="row rounded d-flex bg-medium-gray py-4 px-5 align-items-center launch-container">
+                            <div class="lancamentos-block-b row rounded d-flex bg-medium-gray py-4 px-5 align-items-center launch-container">
                                 <h5 class="text-info w-auto pe-0 mb-0">Margem</h5>
                                 <i class="fas fa-question-circle help-modal-toggler w-auto ps-2 pt-0 text-lighter"></i>
 
@@ -3213,6 +3213,33 @@
                     </button>
 
                     <button data-bs-dismiss="modal">Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- profile-modal -->
+    <div class="modal fade" id="user-profile-modal" tab-index="-1" aria-labelledby="user-profile-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="./assets/images/profile-modal-1.png" alt="" class="profile-header" height="177">
+
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./assets/images/user-small.webp" alt="" id="user-img" width="97" height="97">
+
+                        <div class="up-container text-center">
+                            <h1 class="username text-center mt-3 pt-2">Jotta Veículos Multimarcas</h1>
+
+                            <span class="badge bg-primary text-light">Plano diamante</span>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <a href="">Planos</a>
+                                <a href="">Minha conta</a>
+                                <a href="#" class="active">Sair</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -28,11 +28,11 @@ body {
     font-size: 1.8rem;
 }
 
-@media screen and (min-width:  960px) and (max-width: 1600px) {
+/*@media screen and (min-width:  960px) and (max-width: 1600px) {
     .container {
         max-width: 1040px !important;
     }
-}
+}*/
 
 @media screen and (max-width: 1200px) {
     .container {
@@ -1108,4 +1108,99 @@ body {
 .select2-results__option--selectable {
     color: #c0c0c0;
     padding: 10px !important;
+}
+
+#user-profile-modal .modal-dialog {
+    width: 363px;
+    margin-left: auto !important;
+    margin-right: 2vw;
+    margin-top: 100px;
+}
+
+#user-profile-modal .modal-content,
+#user-profile-modal .modal-body {
+    width: 363px;
+    background: var(--gray);
+    border-radius: 6px;
+    border: 0;
+}
+
+#user-profile-modal .modal-body {
+    padding: 0;
+}
+
+#user-profile-modal .profile-header {
+    width: 100%;
+    border-radius: 6px;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+}
+
+#user-profile-modal #user-img {
+    border: 3px solid rgb(var(--bs-primary-rgb));
+    border-radius: 100%;
+    position: relative;
+    bottom: calc(97px / 2);
+}
+
+#user-profile-modal .username {
+    font-size: 1.125rem;
+    font-weight: 600;
+    width: 193px;
+    color: #fff;
+}
+
+#user-profile-modal .up-container {
+    position: relative;
+    bottom: calc(97px / 2);
+}
+
+#user-profile-modal .badge {
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: .75rem;
+    padding: 5px 13px;
+    margin-top: 22px;
+    margin-bottom: 42px;
+}
+
+#user-profile-modal a {
+    color: #c0c0c0;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: .4s linear;
+    margin: calc(32px / 2) 0;
+    text-decoration: none;
+}
+
+#user-profile-modal a:hover,
+#user-profile-modal a.active {
+    color: rgb(var(--bs-primary-rgb));
+}
+
+
+@media screen and (max-width: 1800px) {
+    #user-profile-modal .modal-dialog {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 100px;
+    }
+}
+
+.lancamentos-block-a {
+    height: 111px;
+}
+
+.lancamentos-block-a .text-lighter {
+    color: #c0c0c0 !important;
+}
+
+.lancamentos-block-b {
+    height: 119px !important;
+}
+
+@media screen and (min-width: 1900px) {
+    .w-xs-104-p {
+        width: 104%;
+    }
 }
