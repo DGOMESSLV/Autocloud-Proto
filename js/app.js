@@ -262,5 +262,15 @@ $(document).ready(() => {
                 $('.navbar').removeAttr('style');
             }
         }
+    });
+
+    $('label').click(function () {
+        let $next = $(this).next();
+
+        if ($next.is('input')) {
+            $next.focus()
+        } else if ($next.hasClass('select2')) {
+            $next.select2('open')
+        }
     })
 });

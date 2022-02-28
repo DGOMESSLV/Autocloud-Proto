@@ -37,3 +37,8 @@ Basta navegar por um terminal até a pasta */assets* e rodar o comando ```npm in
 - Corrigir inputs da negociacão de saída
 - Corrigir tamanho dos containers das abas de negociacão e lancamentos
 - Adicionar toggle das tabelas em negociacão e lancamentos
+
+**Ajustes em Roadmap**
+
+- ~Corrigir container em telas 1200, 1300, 1600, 1680 e 1780~
+- ~Corrigir labels dos campos (ao clicar, precisa focar no campo)~
