@@ -18,16 +18,16 @@ Basta navegar por um terminal até a pasta */assets* e rodar o comando ```npm in
 
 **Ajustes para 24/02**:
 
-- Adicionar botão do Detran na aba de Veículo
+- ~Adicionar botão do Detran na aba de Veículo~
 - Adicionar carrossel de imagens
-- Modal de loja
-- Combos estilizados com select2
+- ~Modal de loja~
+- ~Combos estilizados com select2~
 
 **Ajustes para 25/02**
 
-- Correcão de alinhamento na aba Lancamentos
-- Correcão de dimensões dos blocos na aba Lancamentos
-- Corrigir bold e tamanho das fontes na aba lancamentos
+- ~Correcão de alinhamento na aba Lancamentos~
+- ~Correcão de dimensões dos blocos na aba Lancamentos~
+- ~Corrigir bold e tamanho das fontes na aba lancamentos~
 
 **Ajustes para 26/02**
 
