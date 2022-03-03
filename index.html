@@ -1149,63 +1149,79 @@
                     <!-- Negociacao tab -->
                     <div class="tab-pane fade" role="tabpanel" id="negociacao-tab">
                         <!-- Negociacao 1 -->
-                        <div class="row rounded bg-medium-gray py-4 px-5 with-hidden mb-4">
-                            <div class="col-xs-12 col-lg-3 ps-0 d-flex flex-column py-3">
+                        <div class="row rounded bg-medium-gray py-4 px-5 with-hidden mb-4 d-flex justify-content-between">
+                            <div class="ps-0 d-flex flex-column py-4 w-25">
                                 <div class="d-flex">
-                                    <h5 class="text-danger mb-0">Negociação de entrada</h5>
-                                    <i class="fas fa-question-circle pt-1 help-modal-toggler" id="question-1"></i>
+                                    <h6 class="text-danger font-w-500 mb-0" style="font-size: 1.125rem;">Negociação de entrada</h6>
+                                    <i class="fas fa-question-circle pt-1 help-modal-toggler" id="question-1" style="position: relative; top: -1px"></i>
                                 </div>
 
-                                <span class="text-lighter">Informações e lançamentos</span>
-                                <span class="text-muted font-small">troca com troco</span>
+                                <span style="font-size: .75rem">
+                                    <span class="text-lighter" style="color: #808080">Consignação com</span>
+                                    <span class="text-light font-w-500">Carol Mont</span>
+                                </span>
                             </div>
 
-                            <div class="col-xs-12 col-lg-5 d-flex mt-4 mt-lg-0 py-3">
-                                <img src="./assets/images/people-1.png" class="rounded circle" height="63" width="63"/>
-
-                                <div class="d-flex flex-column ps-2">
-                                    <span class="text-light" style="font-size: .75rem;">
-                                        Carol Mont
-                                    </span>
-
-                                    <span class="text-lighter font-small" style="font-size: .75rem; position: relative; bottom: 2px">
-                                        Cliente
-                                    </span>
-
-                                    <span class="badge-round bg-lighter-gray text-center">
-                                        Perfil
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 col-lg-4 d-flex align-items-lg-end flex-column mt-5 mt-lg-0 pt-2">
-                                <div class="row w-100">
-                                    <div class="col-xs-12 col-md-7 d-flex flex-column px-0 text-center text-md-start text-lg-end">
-                                        <h5 class="text-danger mb-0">R$ 40.000,00</h5>
-
-                                        <span class="text-muted" style="font-size: .75rem;">
-                                            Valor total pago na negociação
-                                        </span>
-                                    </div>
-
-                                    <div class="col-xs-12 col-md-5 ps-4 pe-0 pt-2 d-flex justify-content-around">
-                                        <i class="header-icons far fa-edit"></i>
-                                        <i class="header-icons far fa-sticky-note"></i>
-                                        <i class="header-icons fas fa-chevron-down"></i>
+                            <div class="d-flex w-75 align-items-center justify-content-end">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <h6 class="font-w-500 mb-0" style="color:#00C2FF">R$ 10.000,00</h6>
+                                        <span class="font-w-400 text-end" style="color: #808080; font-size: .75rem">Valor liquidado</span>
                                     </div>
                                 </div>
 
-                                <div class="row d-block w-100 mt-3">
-                                    <div class="col-xs-12 col-md-7 justify-content-lg-end d-flex px-0 text-center text-md-start text-lg-end align-items-center">
-                                        <span class="cancel-neg">
-                                            <i class="fas fa-times pe-3 text-lighter"></i>
+                                <div class="ms-2 ps-1">
+                                    <span
+                                        class="circle-progress"
+                                        style="
+                                            background:
+                                                conic-gradient(
+                                                    #00C2FF 0deg,
+                                                    #00C2FF 160deg,
+                                                    var(--lighter-gray) 75deg,
+                                                    var(--lighter-gray) 305deg
+                                                );
+                                            height: 3rem;
+                                            width: 3rem
+                                    ">
+                                        <span style="
+                                            width: 2.6rem;
+                                            height: 2.6rem;
+                                            margin-right: 1px;
+                                                margin-left:0px;
+                                                margin-bottom: 1px;
+                                            background: #1A1A1A;
+                                            color: #00C2FF;
+                                            font-size: .85rem;
+                                            font-weight: 400;
+                                        ">
+                                            49%
                                         </span>
+                                    </span>
+                                </div>
 
-                                        <button class="btn btn-secondary d-flex align-items-center d-lg-block" style="height: 2.7rem; width: auto !important;">
-                                            <i class="far fa-check-circle"></i>
-                                            Concretizar
-                                        </button>
+                                <div class="d-flex align-items-center ms-3">
+                                    <div class="d-flex flex-column">
+                                        <h6 class="font-w-500 mb-0 text-danger">R$ 40.000,00</h6>
+                                        <span class="font-w-400 text-end" style="color: #808080; font-size: .75rem">Valor total</span>
                                     </div>
+                                </div>
+
+                                <div class="ms-4 d-flex align-items-center">
+                                    <button class="btn btn-secondary concretiza-btn">
+                                        <i class="far fa-check-circle"></i>
+                                        <span class="ps-2">Concretizar</span>
+                                    </button>
+                                </div>
+
+                                <div class="ms-5 d-flex">
+                                    <span class="cancel-neg pe-2">
+                                        <i class="fas fa-trash-alt text-lighter" style="font-size: 19.2px"></i>
+                                    </span>
+
+                                    <i class="header-icons px-2 far fa-edit"></i>
+                                    <i class="header-icons px-2 far fa-sticky-note"></i>
+                                    <i class="header-icons px-2 fas fa-chevron-down"></i>
                                 </div>
                             </div>
 
@@ -1765,62 +1781,78 @@
 
                         <!-- Negociacao 2 -->
                         <div class="row rounded bg-medium-gray py-4 px-5 with-hidden mt-4">
-                            <div class="col-xs-12 col-lg-3 ps-0 d-flex flex-column py-3">
+                            <div class="ps-0 d-flex flex-column py-4 w-25">
                                 <div class="d-flex">
-                                    <h5 class="text-success mb-0">Negociação de Saída</h5>
-                                    <i class="fas fa-question-circle pt-1 help-modal-toggler" id="question-1"></i>
+                                    <h6 class="text-success font-w-500 mb-0" style="font-size: 1.125rem;">Negociação de saída</h6>
+                                    <i class="fas fa-question-circle pt-1 help-modal-toggler" id="question-1" style="position: relative; top: -1px"></i>
                                 </div>
 
-                                <span class="text-lighter">Informações e lançamentos</span>
-                                <span class="text-muted font-small">venda com troca</span>
+                                <span style="font-size: .75rem">
+                                    <span class="text-lighter" style="color: #808080">venda com troca com</span>
+                                    <span class="text-light font-w-500">Gabriele Lima</span>
+                                </span>
                             </div>
 
-                            <div class="col-xs-12 col-lg-5 d-flex mt-4 mt-lg-0 py-3">
-                                <img src="./assets/images/people-2.png" class="rounded circle" height="63" width="63"/>
-
-                                <div class="d-flex flex-column ps-2">
-                                    <span class="text-light" style="font-size: .75rem;">
-                                        Gabriela Lima
-                                    </span>
-
-                                    <span class="text-lighter font-small" style="font-size: .75rem; position: relative; bottom: 2px">
-                                        Cliente
-                                    </span>
-
-                                    <span class="badge-round bg-lighter-gray text-center">
-                                        Perfil
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 col-lg-4 d-flex align-items-lg-end flex-column mt-5 mt-lg-0 pt-2">
-                                <div class="row w-100">
-                                    <div class="col-xs-12 col-md-7 d-flex flex-column px-0 text-center text-md-start text-lg-end">
-                                        <h5 class="text-success mb-0">R$ 40.000,00</h5>
-
-                                        <span class="text-muted" style="font-size: .75rem;">
-                                            Valor total recebido na negociação
-                                        </span>
-                                    </div>
-
-                                    <div class="col-xs-12 col-md-5 ps-4 pe-0 pt-2 d-flex justify-content-around">
-                                        <i class="header-icons far fa-edit"></i>
-                                        <i class="header-icons far fa-sticky-note"></i>
-                                        <i class="header-icons fas fa-chevron-down"></i>
+                            <div class="d-flex w-75 align-items-center justify-content-end">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <h6 class="font-w-500 mb-0" style="color:#00C2FF">R$ 40.000,00</h6>
+                                        <span class="font-w-400 text-end" style="color: #808080; font-size: .75rem">Valor liquidado</span>
                                     </div>
                                 </div>
 
-                                <div class="row d-block w-100 mt-3">
-                                    <div class="col-xs-12 col-md-7 justify-content-lg-end d-flex px-0 text-center text-md-start text-lg-end align-items-center">
-                                        <span class="cancel-neg">
-                                            <i class="fas fa-times pe-3 text-lighter"></i>
+                                <div class="ms-2 ps-1">
+                                    <span
+                                        class="circle-progress"
+                                        style="
+                                            background:
+                                                conic-gradient(
+                                                    #00C2FF 0deg,
+                                                    #00C2FF 160deg,
+                                                    var(--lighter-gray) 75deg,
+                                                    var(--lighter-gray) 305deg
+                                                );
+                                            height: 3rem;
+                                            width: 3rem
+                                    ">
+                                        <span style="
+                                            width: 2.6rem;
+                                            height: 2.6rem;
+                                            margin-right: 1px;
+                                                margin-left:0px;
+                                                margin-bottom: 1px;
+                                            background: #1A1A1A;
+                                            color: #00C2FF;
+                                            font-size: .85rem;
+                                            font-weight: 400;
+                                        ">
+                                            49%
                                         </span>
+                                    </span>
+                                </div>
 
-                                        <button class="btn btn-success d-flex align-items-center d-lg-block text-dark" style="height: 2.7rem; width: auto !important;">
-                                            <i class="far fa-check-circle"></i>
-                                            Concretizada
-                                        </button>
+                                <div class="d-flex align-items-center ms-3">
+                                    <div class="d-flex flex-column">
+                                        <h6 class="font-w-500 mb-0 text-success">R$ 79.000,00</h6>
+                                        <span class="font-w-400 text-end" style="color: #808080; font-size: .75rem">Valor total</span>
                                     </div>
+                                </div>
+
+                                <div class="ms-4 d-flex align-items-center">
+                                    <button class="btn btn-secondary concretiza-btn">
+                                        <i class="far fa-check-circle"></i>
+                                        <span class="ps-2">Concretizar</span>
+                                    </button>
+                                </div>
+
+                                <div class="ms-5 d-flex">
+                                    <span class="cancel-neg pe-2">
+                                        <i class="fas fa-trash-alt text-lighter" style="font-size: 19.2px"></i>
+                                    </span>
+
+                                    <i class="header-icons px-2 far fa-edit"></i>
+                                    <i class="header-icons px-2 far fa-sticky-note"></i>
+                                    <i class="header-icons px-2 fas fa-chevron-down"></i>
                                 </div>
                             </div>
 
