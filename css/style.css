@@ -536,6 +536,13 @@ body {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    #tenth-block .file:nth-child(4) {
+        margin-right: 23px;
+    }
+}
+
+
 #help-modal .modal-content {
     height: auto !important;
     min-height: 100vh !important;
