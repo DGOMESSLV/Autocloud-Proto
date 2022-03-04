@@ -1206,6 +1206,10 @@ body {
     height: 119px !important;
 }
 
+.launch-container:not(.lancamentos-block-b) ´{
+    min-height: 119px;
+}
+
 @media screen and (min-width: 1900px) {
     .w-xs-104-p {
         width: 104%;

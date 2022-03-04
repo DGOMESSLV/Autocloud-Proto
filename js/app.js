@@ -194,7 +194,9 @@ $(document).ready(() => {
     });
 
     $('.expand-collapse-2').click(function () {
-        $(this).parent().parent().next().toggleClass('expanded')
+        $(this).parent().parent().next().toggleClass('expanded');
+
+        $(this).parent().parent().parent().toggleClass('lancamentos-block-b');
     });
 
     $('.fa-thumbs-up').click(function () {
