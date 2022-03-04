@@ -24,6 +24,7 @@ Basta navegar por um terminal até a pasta */assets* e rodar o comando ```npm in
 - Corrigir container em telas 1200, 1300, 1600, 1680 e 1780
 - Corrigir labels dos campos (ao clicar, precisa focar no campo)
 - Nova aparencia dos menus de negociacão de entrada e saída
+- Corrigir tamanho dos containers das abas de negociacão e lancamentos
 
 **Ajustes para 24/02**:
 
@@ -31,8 +32,7 @@ Basta navegar por um terminal até a pasta */assets* e rodar o comando ```npm in
 
 **Ajustes para 26/02**
 
-- Correcão dos textos na negociacão de saída
 - Melhorar respiro dos inputs nos collapses das negociacões
+- Correcão dos textos na negociacão de saída
 - Corrigir inputs da negociacão de saída
-- Corrigir tamanho dos containers das abas de negociacão e lancamentos
 - Adicionar toggle das tabelas em negociacão e lancamentos
