@@ -271,7 +271,7 @@
     .desktop-sidebar .side-item,
     .desktop-sidebar .icon,
     .desktop-sidebar .side-link {
-        color: #c0c0c0;
+        color: #fff;
         transition: color .5s;
         font-size: .875rem;
     }
