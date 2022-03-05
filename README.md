@@ -41,3 +41,4 @@ Basta navegar por um terminal até a pasta */assets* e rodar o comando ```npm in
 
 - Adicionar pesquisa nos boxes que terão suporte (Falta Componente)
 - Diminuir padding esquerdo dos blocos de formulário da direita na aba de veículo, para ficar centralizado
+- Adicionar icones faltantes
