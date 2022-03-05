@@ -33,10 +33,11 @@ Basta navegar por um terminal até a pasta */assets* e rodar o comando ```npm in
 - Deixar textos da sidebar brancos
 - Corrigir bug dos anexos em telas menores de 1200px
 - Corrigir abertura do menu na aba lancamentos
+- Adicionar carrossel de imagens
+- Adicionar modal para inclusão de imagens do veículo
 
 **Ajustes restantes**:
 
-- Adicionar carrossel de imagens
 - Adicionar toggle das tabelas em negociacão e lancamentos
 - Adicionar pesquisa nos boxes que terão suporte (Falta Componente)
 - Diminuir padding esquerdo dos blocos de formulário da direita na aba de veículo, para ficar centralizado

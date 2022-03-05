@@ -274,5 +274,14 @@ $(document).ready(() => {
         } else if ($next.hasClass('select2')) {
             $next.select2('open')
         }
-    })
+    });
+
+    $('.camera-icon').hover(() => {
+        console.log('aquiii');
+        $('.carousel').trigger('mouseover');
+    });
+
+    $('.camera-icon').mouseleave(() => {
+        $('.carousel').trigger('mousedown');
+    });
 });
