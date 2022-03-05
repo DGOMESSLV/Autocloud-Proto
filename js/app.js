@@ -284,4 +284,28 @@ $(document).ready(() => {
     $('.camera-icon').mouseleave(() => {
         $('.carousel').trigger('mousedown');
     });
+
+    $('table.datatables').each(function () {
+        const attr = name => {
+            // Debug point, if need
+            // console.log(
+            //     name,
+            //     $(this).attr(`data-${name}`),
+            //     $(this).attr(`data-${name}`) && $(this).attr(`data-${name}`) == 'off' ? false : true
+            // );
+
+            return $(this).attr(`data-${name}`) && $(this).attr(`data-${name}`) == 'off' ? false : true
+        }
+
+        const language = ($(this).attr('data-datatables-language') ?? "en-us").replace('-', '_');
+
+        $(this).DataTable({
+            lengthChange: attr('use-show-n-entries'),
+            paging: attr('paginate'),
+            searching: attr('use-search-bar'),
+            ordering: attr('enable-ordering'),
+            info: attr('show-entries-range'),
+            language: window.lang.datatables[language],
+        });
+    });
 });

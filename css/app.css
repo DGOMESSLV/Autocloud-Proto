@@ -682,3 +682,54 @@ label {
 .select2-container--default.select2-container--open.select2-container--bellow .select2-selection--single, .select2-container--default.select2-container--open.select2-container--bellow .select2-selection--multiple {
     border-color: rgb(var(--bs-primary-rgb));
 }
+
+.datatables {
+    width: calc(100% - 1rem);
+    margin-left: .5rem;
+}
+
+table.dataTable td, table.dataTable th {
+    font-size: .875rem;
+    font-weight: 400;
+    color: #cfcfcf;
+}
+
+table.dataTable {
+    border-collapse: collapse !important;
+}
+
+.datatables thead {
+    background: #262626;
+}
+
+.datatables thead th {
+    padding: 18px 0;
+        padding-left: 30px;
+        padding-bottom: 10px;
+}
+
+.datatables tbody tr td {
+    padding: 18px 0;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    transition: .2s linear;
+}
+
+.datatables tbody tr:hover td:not(:nth-last-child(1)) {
+    color: rgb(var(--bs-primary-rgb));
+}
+
+.datatables tbody tr td:nth-last-child(1) {
+    text-align: right;
+}
+
+.datatables tbody tr td:nth-last-child(1) i {
+    font-size: 1rem;
+    padding: 0 .4rem;
+    transition: inherit;
+    cursor: pointer;
+}
+
+.datatables tbody tr td:nth-last-child(1) i:hover {
+    color: rgb(var(--bs-primary-rgb));
+}
