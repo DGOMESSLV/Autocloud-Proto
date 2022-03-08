@@ -36,9 +36,12 @@ Basta navegar por um terminal até a pasta */assets* e rodar o comando ```npm in
 - Adicionar carrossel de imagens
 - Adicionar modal para inclusão de imagens do veículo
 - Adicionar datatables em negociacão e lancamentos
+- Diminuir padding esquerdo dos blocos de formulário da direita na aba de veículo, para ficar centralizado
+- Corrigir Ortografia em visibilidade (veículos)
+- Corrigir acerto financeiro
+- Corrigir modal de etiquetas
 
 **Ajustes restantes**:
 
 - Adicionar pesquisa nos boxes que terão suporte (Falta Componente)
-- Diminuir padding esquerdo dos blocos de formulário da direita na aba de veículo, para ficar centralizado
 - Adicionar icones faltantes
