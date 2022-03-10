@@ -40,8 +40,23 @@ Basta navegar por um terminal até a pasta */assets* e rodar o comando ```npm in
 - Corrigir Ortografia em visibilidade (veículos)
 - Corrigir acerto financeiro
 - Corrigir modal de etiquetas
+- Retirar cor indevida dos boxes já preenchidos por uma cor principal
+- Deixar menu de negociacão fechado por padrão
+- Diminuir fonte combos
+- Corrigir sambada da scrollbar
+- Adicionar scrollbar
+- Concertar cor da Margem no Lancamentos
+- Centralizar modal de alerta
+- Centralizar modal de confirm
+- Adicionar cursor no icone de ajuda e garantir que todos abram
+- Ajustar menu de valores em telas menores
+- Alinhar container de lancamentos em telas menores
+- Corrigir espacamento
+- Bloquear aba Histórico
+- Alinhar icone de ajuda
 
 **Ajustes restantes**:
 
 - Adicionar pesquisa nos boxes que terão suporte (Falta Componente)
-- Adicionar icones faltantes
+- Adicionar icones faltantes (falta o pack de SVGs com fill)
+- Abrir imagem do carrosel em modal fullscreen

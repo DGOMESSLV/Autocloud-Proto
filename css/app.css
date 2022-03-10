@@ -4,6 +4,27 @@
  * Created at: 01/22/2022
  * Author: Diego Gomes <dgs190plc@outlook>
  */
+*::-webkit-scrollbar {
+    width: 8px;
+    background: #0E0E0E;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #474747;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--bs-primary-rgb));
+}
+
+* {
+    scrollbar-color: rgb(var(--bs-primary-rgb)) #0E0E0E;
+}
+
+body {
+    overflow-y: scroll !important;
+}
 
 /* Navbar */
 .navbar {

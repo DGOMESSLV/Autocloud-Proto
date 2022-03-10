@@ -135,7 +135,7 @@ $(document).ready(() => {
         $(this).parent().toggleClass('active');
     });
 
-    $('.help-modal-toggler').click(() => $('#help-modal').modal('toggle'));
+    $('.help-modal-toggler, .fa-question-circle').click(() => $('#help-modal').modal('toggle'));
 
     $('.with-hidden:not(.collpase-row):not(button)').click(function (e) {
         let $target = $(e.target);

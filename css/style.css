@@ -233,7 +233,7 @@ body {
     color: #c0c0c0;
     position: relative;
     left: 10px;
-    top: 1px;
+    /*top: 1px;*/
 }
 
 .tab-pane label:not(.no-effects),
@@ -616,7 +616,7 @@ body {
 }
 
 .cancel-neg::before {
-    content: "Cancelar negociacao";
+    /*content: "Cancelar negociacao";*/
     position: absolute;
     right: calc(38vw - 1rem);
     display: block;
@@ -717,6 +717,10 @@ body {
 .before-danger .rounded,
 .before-success .rounded {
     background: var(--medium-gray);
+}
+
+.before-danger.no-before::after {
+    display: none !important
 }
 
 .before-danger::after,
@@ -1124,6 +1128,7 @@ body {
 
 .select2-selection__rendered {
     color: #c0c0c0 !important;
+    font-size: .875rem;
     position: relative;
     top: 4px;
 }
@@ -1144,16 +1149,19 @@ body {
 .select2-container--default .select2-results__option--selected,
 .select2-container--default .select2-results__option--selected:hover {
     color: #c0c0c0 !important;
+    font-size: .875rem;
     background: rgb(var(--bs-primary-rgb)) !important;
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     color: #c0c0c0 !important;
+    font-size: .875rem;
     background: #3D3630;
 }
 
 .select2-results__option--selectable {
     color: #c0c0c0;
+    font-size: .875rem;
     padding: 10px !important;
 }
 
@@ -1263,4 +1271,72 @@ body {
     padding: 8px 16px !important;
     display: flex;
     align-items: center;
+}
+
+.modal-middle .modal-dialog {
+    height: 100vh;
+    display: flex !important;
+    align-items: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+
+.fa-question-circle {
+    cursor: pointer;
+}
+
+@media screen and (min-width:  1200px) and (max-width:  1260px) {
+    .header-sec .col-lg-5 {
+        width: auto !important;
+    }
+
+    .header-sec .col-xl-7 {
+        max-width: 100%;
+        width: 65%;
+        margin-left: auto;
+    }
+}
+
+
+@media screen and (min-width: 1300px) and (max-width: 1340px) {
+    .to-up-6 {
+        bottom: calc(var(--base-spacer) * 5.3) !important;
+    }
+}
+
+@media screen and (min-width: 1340px) and (max-width: 1422px) {
+    .to-up-6 {
+        bottom: calc(var(--base-spacer) * 5.8 !important;
+    }
+}
+
+@media screen and (min-width: 1422px) and (max-width: 1488px) {
+    .to-up-6 {
+        bottom: calc(var(--base-spacer) * 5.3 !important;
+    }
+}
+
+@media screen and (min-width: 1488px) and (max-width: 1799px) {
+    .to-up-6 {
+        bottom: calc(var(--base-spacer) * 5.3 !important;
+    }
+}
+
+#third-block .fa-question-circle,
+#fourth-block .fa-question-circle,
+#fifth-block .fa-question-circle,
+#sixth-block .fa-question-circle,
+#seventh-block .fa-question-circle,
+#eighth-block .fa-question-circle,
+#ninth-block .fa-question-circle,
+#tenth-block .fa-question-circle {
+    position: relative;
+    top: -1px !important;
+}
+
+.before-help {
+    position: relative;
+    left: 16px;
+    bottom: 10px;
 }
