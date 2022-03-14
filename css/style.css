@@ -598,8 +598,7 @@ body {
     transition: .3s linear;
 }
 
-#negociacao-tab .row .header-icons:nth-child(1):hover,
-#negociacao-tab .row .header-icons:nth-child(2):hover {
+#negociacao-tab .row .header-icons:not(.fa-chevron-down):hover {
     color: rgb(var(--bs-primary-rgb));
 }
 
@@ -610,7 +609,7 @@ body {
 }
 
 .cancel-neg:hover i {
-    color: rgb(var(--bs-danger-rgb));
+    color: rgb(var(--bs-primary-rgb));
     transition: .1s linear;
 
 }
@@ -1156,7 +1155,7 @@ body {
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     color: #c0c0c0 !important;
     font-size: .875rem;
-    background: #3D3630;
+    background: rgb(var(--bs-primary-rgb));
 }
 
 .select2-results__option--selectable {

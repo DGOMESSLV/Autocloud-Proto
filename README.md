@@ -54,9 +54,14 @@ Basta navegar por um terminal até a pasta */assets* e rodar o comando ```npm in
 - Corrigir espacamento
 - Bloquear aba Histórico
 - Alinhar icone de ajuda
+- Adicionar pesquisa nos boxes que terão suporte (Falta Componente)
+- Corrigir alinhamento dos graficos redondos em lancamentos
+- Diminuir setas dos collpases em lancamentos
+- Deixar o hover do select2 com a mesma cor do selecionado
+- Alinhar grid da tabela
+- Retirar colunas da ultima tabela para manter espacamento
+- Padronizar hover dos icones das caixas principais em negociacão
 
 **Ajustes restantes**:
 
-- Adicionar pesquisa nos boxes que terão suporte (Falta Componente)
 - Adicionar icones faltantes (falta o pack de SVGs com fill)
-- Abrir imagem do carrosel em modal fullscreen

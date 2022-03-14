@@ -505,7 +505,7 @@
                                         <div class="row mt-4 pe-md-0 pe-lg-0">
                                             <div class="px-2 pe-md-1 col-xs-12 col-xl-6">
                                                 <label for="">Tipo do Veículo</label>
-                                                <select class="form-control">
+                                                <select class="form-control select2">
                                                     <option disabled selected></option>
                                                     <option value="1">Tipo 1</option>
                                                     <option value="2">Tipo 2</option>
@@ -516,7 +516,7 @@
 
                                             <div class="px-2 py-0 col-xs-12 col-xl-6">
                                                 <label for="">Marca</label>
-                                                <select class="form-control">
+                                                <select class="form-control select2">
                                                     <option disabled selected></option>
                                                     <option value="1">Marca 1</option>
                                                     <option value="2">Marca 2</option>
@@ -527,7 +527,7 @@
 
                                             <div class="px-2 pt-0 col-xs-12 col-xl-6 to-up">
                                                 <label for="">Modelo</label>
-                                                <select class="form-control">
+                                                <select class="form-control select2">
                                                     <option disabled selected></option>
                                                     <option value="1">Modelo 1</option>
                                                     <option value="2">Modelo 2</option>
@@ -2515,7 +2515,7 @@
                                             <h5 class="font-w-400 text-danger">R$ 40.800,00</h5>
                                         </div>
 
-                                        <i class="fas fa-chevron-down text-lighter ms-5 expand-collapse-2" style="font-size: 1.6rem"></i>
+                                        <i class="fas fa-chevron-down text-lighter ms-5 expand-collapse-2" style="font-size: 1.35rem"></i>
                                     </div>
                                 </div>
 
@@ -2610,7 +2610,7 @@
                                     </div>
 
                                     <div class="row mt-4">
-                                        <div class="col-12 pe-0 ps-0">
+                                        <div class="col-12 pe-0 ps-1">
                                             <table
                                                 class="datatables"
                                                 data-show-entries-range="off"
@@ -2693,7 +2693,7 @@
                                             <h5 class="font-w-400 text-success">R$ 48.600,00</h5>
                                         </div>
 
-                                        <i class="fas fa-chevron-down text-lighter ms-5 expand-collapse-2" style="font-size: 1.6rem"></i>
+                                        <i class="fas fa-chevron-down text-lighter ms-5 expand-collapse-2" style="font-size: 1.35rem"></i>
                                     </div>
                                 </div>
 
@@ -2764,7 +2764,7 @@
                                     </div>
 
                                     <div class="row mt-5">
-                                        <div class="col-12 pe-0">
+                                        <div class="col-12 pe-0 ps-1">
                                             <table
                                                 class="datatables"
                                                 data-show-entries-range="off"
@@ -2813,11 +2813,11 @@
                                     <div class="d-flex justify-content-end align-items-center">
                                         <div class="d-flex flex-column">
                                             <span class="font-small text-light ms-auto">Valor já pago</span>
-                                            <h5 class="font-w-400 text-danger">R$ 0,00</h5>
+                                            <h5 class="font-w-400 text-danger text-end">R$ 0,00</h5>
                                         </div>
 
-                                        <div>
-                                            <span class="circle-progress text-secondary mx-4" style="background: conic-gradient(var(--medium-gray) 0deg, var(--medium-gray) 360deg; height: 3rem; width: 3rem">
+                                        <div style="margin-right: 29px">
+                                            <span class="circle-progress text-secondary mx-4" style="background: conic-gradient(#4d4d4d 0deg, #4d4d4d 360deg); height: 3rem; width: 3rem">
                                                 <span style="width: 2.6rem; height: 2.6rem; margin-right:1px; margin-left:0px; margin-bottom: 0px">0%</span>
                                             </span>
                                         </div>
@@ -2827,7 +2827,7 @@
                                             <h5 class="font-w-400 text-danger">R$ 800,00</h5>
                                         </div>
 
-                                        <i class="fas fa-chevron-down text-lighter ms-5 expand-collapse-2" style="font-size: 1.6rem"></i>
+                                        <i class="fas fa-chevron-down text-lighter ms-5 expand-collapse-2" style="font-size: 1.35rem"></i>
                                     </div>
                                 </div>
 
@@ -2869,7 +2869,7 @@
                                     </div>
 
                                     <div class="row mt-4">
-                                        <div class="col-12 pe-0">
+                                        <div class="col-12 pe-0 ps-1">
                                             <table
                                                 class="datatables"
                                                 data-show-entries-range="off"
@@ -2881,32 +2881,30 @@
                                             >
                                                 <thead>
                                                     <tr>
-                                                        <th style="padding-left: .7rem !important; padding-right: .2rem !important;">Referência</th>
-                                                        <th style="padding-left: .2rem !important; padding-right: .2rem !important;">Emissão</th>
-                                                        <th style="padding-left: .2rem !important; padding-right: .2rem !important;">Vencimento</th>
-                                                        <th style="padding-left: .2rem !important; padding-right: .2rem !important;">Categoria</th>
-                                                        <th style="padding-left: .2rem !important; padding-right: .2rem !important;">Fornecedor</th>
-                                                        <th style="padding-left: .2rem !important; padding-right: .2rem !important;">Baixa</th>
-                                                        <th style="padding-left: .2rem !important; padding-right: .2rem !important;">Conta</th>
-                                                        <th style="padding-left: .2rem !important; padding-right: .2rem !important;">Tipo</th>
-                                                        <th style="padding-left: .2rem !important; padding-right: .2rem !important;">Conta</th>
-                                                        <th style="padding-left: .2rem !important; padding-right: .2rem !important;">Valor</th>
-                                                        <th style="padding-left: .2rem !important; padding-right: .2rem !important;"></th>
+                                                        <th>Referência</th>
+                                                        <th>Emissão</th>
+                                                        <th>Vencimento</th>
+                                                        <th>Fornecedor</th>
+                                                        <th>Baixa</th>
+                                                        <th>Conta</th>
+                                                        <th>Tipo</th>
+                                                        <th>Conta</th>
+                                                        <th>Valor</th>
+                                                        <th></th>
                                                     </tr>
                                                 </thead>
 
                                                 <tbody>
                                                     <tr>
-                                                        <td style="padding-left: .2rem !important; padding-right: .2rem !important">Dez 2020</td>
-                                                        <td style="padding-left: .2rem !important; padding-right: .2rem !important">05 Jan 2021</td>
-                                                        <td style="padding-left: .2rem !important; padding-right: .2rem !important">05 Jan 2021</td>
-                                                        <td style="padding-left: .2rem !important; padding-right: .2rem !important">Garantias & pós venda</td>
-                                                        <td style="padding-left: .2rem !important; padding-right: .2rem !important">Mecânica Certa</td>
-                                                        <td style="padding-left: .2rem !important; padding-right: .2rem !important">05 Jan 2021</td>
-                                                        <td style="padding-left: .2rem !important; padding-right: .2rem !important">TED</td>
-                                                        <td style="padding-left: .2rem !important; padding-right: .2rem !important">Santander</td>
-                                                        <td style="padding-left: .2rem !important; padding-right: .2rem !important">R$ 800,00</td>
-                                                        <td style="padding-left: .2rem !important; padding-right: .2rem !important">
+                                                        <td>Dez 2020</td>
+                                                        <td>05 Jan 2021</td>
+                                                        <td>05 Jan 2021</td>
+                                                        <td>Mecânica Certa</td>
+                                                        <td>05 Jan 2021</td>
+                                                        <td>TED</td>
+                                                        <td>Santander</td>
+                                                        <td>R$ 800,00</td>
+                                                        <td>
                                                             <i class="fas fa-thumbs-up text-lighter" style="transform: rotate(180deg)"></i>
                                                         </td>
                                                     </tr>
