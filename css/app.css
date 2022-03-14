@@ -774,6 +774,35 @@ table.dataTable {
     color: #c0c0c0 !important;
 }
 
+.select2-container--default .select2-search--dropdown .select2-search__field:focus-visible,
+.select2-search--dropdown .select2-search__field:focus-visible,
+.select2-search__field:focus-visible {
+    border-color: #ff6f00 !important;
+    box-shadow: none;
+    outline: 0 !important;
+}
+
 .select2-results__option {
+    color: #c0c0c0;
+}
+
+.modal {
+    background: rgba(0, 0, 0, .82);
+}
+
+.card-include {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: #B6B6B6;
+    padding: 18px 0;
+    transition: .4s;
+}
+
+.card-include:hover {
+    background: rgb(var(--bs-primary-rgb));
     color: #c0c0c0;
 }

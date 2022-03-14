@@ -505,7 +505,7 @@
                                         <div class="row mt-4 pe-md-0 pe-lg-0">
                                             <div class="px-2 pe-md-1 col-xs-12 col-xl-6">
                                                 <label for="">Tipo do Veículo</label>
-                                                <select class="form-control select2">
+                                                <select class="form-control select2" data-select2-search="disabled">
                                                     <option disabled selected></option>
                                                     <option value="1">Tipo 1</option>
                                                     <option value="2">Tipo 2</option>
@@ -568,7 +568,12 @@
 
                                             <div class="px-2 pt-0 col-12 to-up to-up-2">
                                                 <label for="">Versão</label>
-                                                <input type="text" class="form-control">
+                                                <select type="text" class="form-control select2">
+                                                    <option value="1">Versão 1</option>
+                                                    <option value="2">Versão 2</option>
+                                                    <option value="3">Versão 3</option>
+                                                    <option value="4">Versão 4</option>
+                                                </select>
                                                 <i class="fas fa-search input-after"></i>
                                             </div>
 
@@ -1286,7 +1291,9 @@
                                                             <div class="profile-card col-xs-12 col-md-4 col-lg-4 bg-lighter-gray d-flex flex-column align-items-center pt-2 pb-4 rounded" style="width: 136px">
                                                                 <i class="text-lighter ms-auto fas fa-times"></i>
 
-                                                                <img src="./assets/images/export.png" class="rounded circle" width="60" height="60">
+                                                                <div class="card-include">
+                                                                    <i class="fa-add-plus"></i>
+                                                                </div>
 
                                                                 <span class="font-small text-light font-w-600 mt-2">Incluir</span>
                                                                 <span class="text-lighter font-small">Terceiro</span>
@@ -1933,7 +1940,7 @@
                                                             <div class="profile-card col-xs-12 col-md-4 col-lg-4 bg-lighter-gray d-flex flex-column align-items-center pt-2 pb-4 rounded" style="width: 136px">
                                                                 <i class="text-lighter ms-auto fas fa-times"></i>
 
-                                                                <img src="./assets/images/export.png" class="rounded circle" width="60" height="60">
+                                                                <div class="card-include"><i class="fa-add-plus"></i></div>
 
                                                                 <span class="font-small text-light font-w-600 mt-2">Incluir</span>
                                                                 <span class="text-lighter font-small">Avalista</span>

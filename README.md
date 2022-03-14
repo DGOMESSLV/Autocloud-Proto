@@ -61,6 +61,8 @@ Basta navegar por um terminal até a pasta */assets* e rodar o comando ```npm in
 - Alinhar grid da tabela
 - Retirar colunas da ultima tabela para manter espacamento
 - Padronizar hover dos icones das caixas principais em negociacão
+- Aumentar sombra da tela ao abrir modais
+- Trocar focus da busca do select2 para laranja principal
 
 **Ajustes restantes**:
 

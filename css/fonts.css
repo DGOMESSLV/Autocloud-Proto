@@ -15,6 +15,20 @@
     font-display: block;
 }
 
+@font-face {
+    font-family: 'icomoon2';
+    src: url('../assets/fonts/icomoon2.eot?isf6rq');
+    src:
+        url('../assets/fonts/icomoon2.eot?isf6rq#iefix') format('embedded-opentype'),
+        url('../assets/fonts/icomoon2.ttf?isf6rq') format('truetype'),
+        url('../assets/fonts/icomoon2.woff?isf6rq') format('woff'),
+        url('../assets/fonts/icomoon2.svg?isf6rq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
 .font-bold {
     font-weight: 500;
 }
@@ -72,4 +86,29 @@
 .fa-thumbs-up::before {
     font-family: 'Font Awesome 5 Free' !important;
     font-weight: 900 !important;
+}
+
+.fa-eye-slash::before {
+    font-family: 'icomoon2' !important;
+    content: "\e902";
+}
+
+.fa-eye::before {
+    font-family: 'icomoon2' !important;
+    content: "\e901";
+}
+
+.fa-add-plus::before {
+    font-family: 'icomoon2' !important;
+    content: "\e900";
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-style: normal;
+    transform: rotate(100deg);
+}
+
+.fa-add-plus {
+    transform: rotate(1deg);
+    position: relative;
+    left: 1px;
 }
