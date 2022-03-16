@@ -277,7 +277,6 @@ $(document).ready(() => {
     });
 
     $('.camera-icon').hover(() => {
-        console.log('aquiii');
         $('.carousel').trigger('mouseover');
     });
 
