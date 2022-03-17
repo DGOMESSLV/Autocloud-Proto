@@ -305,10 +305,12 @@
                         </div>
                         <div class="col-3 px-0" style="background-image: url('./assets/images/top-cars/b.png')">
                         </div>
+                        <div class="col-3 px-0" style="background-image: url('./assets/images/top-cars/f.png')">
+                        </div>
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <<!-- div class="carousel-item">
                     <div class="row">
                         <div class="col-3 px-0" style="background-image: url('./assets/images/top-cars/a.png')">
                         </div>
@@ -316,10 +318,8 @@
                         </div>
                         <div class="col-3 px-0" style="background-image: url('./assets/images/top-cars/b.png')">
                         </div>
-                        <div class="col-3 px-0" style="background-image: url('./assets/images/top-cars/f.png')">
-                        </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -511,7 +511,7 @@
                                                     <option value="2">Tipo 2</option>
                                                     <option value="3">Tipo 3</option>
                                                 </select>
-                                                <i class="fas fa-chevron-down input-after"></i>
+                                                <i class="fas fa-chevron-down input-after select2-arrow"></i>
                                             </div>
 
                                             <div class="px-2 py-0 col-xs-12 col-xl-6">
@@ -522,18 +522,18 @@
                                                     <option value="2">Marca 2</option>
                                                     <option value="3">Marca 3</option>
                                                 </select>
-                                                <i class="fas fa-chevron-down input-after"></i>
+                                                <i class="fas fa-chevron-down input-after select2-arrow"></i>
                                             </div>
 
-                                            <div class="px-2 pt-0 col-xs-12 col-xl-6 to-up">
+                                            <div class="px-2 pt-0 col-xs-12 col-xl-6 to-up pe-1">
                                                 <label for="">Modelo</label>
-                                                <select class="form-control select2">
+                                                <select class="form-control select2 w-100">
                                                     <option disabled selected></option>
                                                     <option value="1">Modelo 1</option>
                                                     <option value="2">Modelo 2</option>
                                                     <option value="3">Modelo 3</option>
                                                 </select>
-                                                <i class="fas fa-chevron-down input-after"></i>
+                                                <i class="fas fa-chevron-down input-after select2-arrow"></i>
                                             </div>
 
                                             <div class="px-2 pt-0 col-xs-6 col-xl-3 to-up">
@@ -574,7 +574,7 @@
                                                     <option value="3">Versão 3</option>
                                                     <option value="4">Versão 4</option>
                                                 </select>
-                                                <i class="fas fa-search input-after"></i>
+                                                <i class="fas fa-search input-after" id="search-select2"></i>
                                             </div>
 
                                             <div class="px-2 pt-0 col-xs-6 col-xl-3 to-up to-up-3">
@@ -640,7 +640,6 @@
                                                     <option value="3">Tipo 3</option>
                                                 </select>
                                                 <i class="fas fa-chevron-down input-after select2-arrow"></i>
-
                                             </div>
 
                                             <div class="px-2 pt-0 col-xs-6 col-xl-3 to-up to-up-4">
@@ -652,7 +651,6 @@
                                                     <option value="3">Cor 3</option>
                                                 </select>
                                                 <i class="fas fa-chevron-down input-after select2-arrow"></i>
-
                                             </div>
 
                                             <div class="px-2 pt-0 col-xs-6 col-xl-3 to-up to-up-4">
@@ -664,7 +662,6 @@
                                                     <option value="3">Tonalidade 3</option>
                                                 </select>
                                                 <i class="fas fa-chevron-down input-after select2-arrow"></i>
-
                                             </div>
 
                                             <div class="px-2 pt-0 col-xs-6 col-xl-3 to-up to-up-5">
@@ -686,7 +683,6 @@
                                                     <option value="3">Tipo 3</option>
                                                 </select>
                                                 <i class="fas fa-chevron-down input-after select2-arrow"></i>
-
                                             </div>
 
                                             <div class="px-2 col-xs-12 col-xl-6 to-up to-up-6">
@@ -3311,7 +3307,7 @@
         </div>
     </div>
 
-    <!--  -->
+    <!-- Photos modal -->
     <div class="modal modal-middle fade" id="add-photo-modal" tab-index="-1" aria-labelledby="add-photo-modal">
         <div class="modal-dialog d-flex align-items-center">
             <div class="modal-content">

@@ -26,13 +26,16 @@ function showAlertModal(text) {
 }
 
 $(document).ready(() => {
+    $('.carousel-item.active .row').scrollLeft(0);
+    $('.carousel-item.active .row').css('scroll-behavior', 'smooth');
+
     $('.select2').each(function () {
         $(this).select2({
             minimumResultsForSearch: $(this).attr('data-select2-search') == 'disabled' ? -1 : 0
-        })
+        });
     });
 
-    $('.select2-arrow').click(function () {
+    $('.select2-arrow, #search-select2').click(function () {
         $(this).prev().prev().select2('open');
     })
 
@@ -200,7 +203,6 @@ $(document).ready(() => {
     });
 
     $('.fa-thumbs-up').click(function () {
-        console.log($(this).css('transform'));
         if ($(this).css('transform') == 'matrix(-1, 0, 0, -1, 0, 0)') {
             $(this).css({transform: 'rotate(0deg)', transition: '.2s linear'});
         } else {
@@ -270,9 +272,9 @@ $(document).ready(() => {
         let $next = $(this).next();
 
         if ($next.is('input')) {
-            $next.focus()
+            $next.focus();
         } else if ($next.hasClass('select2')) {
-            $next.select2('open')
+            $next.select2('open');
         }
     });
 
@@ -284,17 +286,26 @@ $(document).ready(() => {
         $('.carousel').trigger('mousedown');
     });
 
-    $('table.datatables').each(function () {
-        const attr = name => {
-            // Debug point, if need
-            // console.log(
-            //     name,
-            //     $(this).attr(`data-${name}`),
-            //     $(this).attr(`data-${name}`) && $(this).attr(`data-${name}`) == 'off' ? false : true
-            // );
+    $('.carousel-control-next').click(() => {
+        const context = $('.carousel-item.active .row');
 
-            return $(this).attr(`data-${name}`) && $(this).attr(`data-${name}`) == 'off' ? false : true
-        }
+        let currentScroll = $(context).scrollLeft();
+        let increaseScrollAmount = $(context).find('.col-3').width();
+
+        $(context).scrollLeft(currentScroll + increaseScrollAmount);
+    });
+
+    $('.carousel-control-prev').click(() => {
+        const context = $('.carousel-item.active .row');
+
+        let currentScroll = $(context).scrollLeft();
+        let decreaseScrollAmount = $(context).find('.col-3').width();
+
+        $(context).scrollLeft(currentScroll - decreaseScrollAmount);
+    });
+
+    $('table.datatables').each(function () {
+        const attr = name => $(this).attr(`data-${name}`) && $(this).attr(`data-${name}`) == 'off' ? false : true;
 
         const language = ($(this).attr('data-datatables-language') ?? "en-us").replace('-', '_');
 
