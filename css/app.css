@@ -1077,3 +1077,11 @@ table.dataTable {
     border-color: invalid-value !important;
     box-shadow: none !important;
 }
+
+@media screen and (min-width: 1900px) {
+    .carousel {
+        /*position: relative;
+        top: 30px;
+        marign-bottom: 30px;*/
+    }
+}
