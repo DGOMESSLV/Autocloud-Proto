@@ -1085,3 +1085,19 @@ table.dataTable {
         marign-bottom: 30px;*/
     }
 }
+
+.fa-camera::before{
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900 !important;
+    font-style: normal;
+    position: relative;
+}
+
+.fa-camera[data-bs-target="#add-photo-modal"]::before {
+    left: 3px;
+}
+
+#modal-camera-icon::before {
+    top: 2px;
+    left: 3px;
+}
