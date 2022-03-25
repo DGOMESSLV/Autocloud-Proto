@@ -254,6 +254,10 @@ $(document).ready(() => {
         $(this).toggleClass('checked')
     });
 
+    $('.form-check .form-check-input').click(function () {
+        $(this).toggleClass('checked')
+    });
+
     $('.navbar-toggler').click(() => {
         let screenWidth = $(window).width();
 
@@ -303,6 +307,74 @@ $(document).ready(() => {
 
         $(context).scrollLeft(currentScroll - decreaseScrollAmount);
     });
+
+    $('.carousel-item .row .col-3').click(function () {
+        let imgSrc = $(this).css('background-image').replace('url("', '').replace('")', '');
+
+        $('#photo-modal img').attr('src', imgSrc);
+
+        $('#photo-modal').modal('show');
+    });
+
+    $('#photo-modal-prev').click(function () {
+        let imgSrc = 'url("' + $(this).parent().next().find('img').attr('src') + '")';
+
+        $('.carousel-item .row .col-3').each(function () {
+            if ($(this).css('background-image') == imgSrc && $(this).prev()) {
+
+                let newSrc = $(this).prev().css('background-image').replace('url("', '').replace('")', '');
+                $('#photo-modal img').attr('src', newSrc);
+            }
+        });
+    });
+
+    $('#photo-modal-next').click(function () {
+        let imgSrc = 'url("' + $(this).parent().prev().find('img').attr('src') + '")';
+
+        $('.carousel-item .row .col-3').each(function () {
+
+            if ($(this).css('background-image') == imgSrc && $(this).next()) {
+                let newSrc = $(this).next().css('background-image').replace('url("', '').replace('")', '');
+                $('#photo-modal img').attr('src', newSrc);
+            }
+        });
+    });
+
+    $('.photo-modal .modal-dialog').click(e => {
+        if ($(e.target).hasClass('modal-dialog') || $(e.target).hasClass('modal-content') || $(e.target).hasClass('modal-body')) {
+            $('#photo-modal').modal('hide');
+        }
+    });
+
+    $('.collapse-toggler').click(function () {
+        let target = $(this).attr('href');
+        let isExpanded = $(this).attr('aria-expanded') == 'true' ? 'false' : 'true';
+
+        $(this).attr('aria-expanded', isExpanded);
+        $(target).toggleClass('show');
+    })
+
+    $('.opt-check').on('click', function () {
+        console.log('aquii');
+        const el = $(this).parent().parent();
+        let value = $(this).val();
+        let state = $(this).hasClass('checked');
+
+        console.log({
+            el,
+            value,
+            state
+        })
+
+        if (state) {
+            $('.checked-opts ul').append('<li>' + $(el).html() + '</li>');
+        } else {
+            $(`.checked-opts ul input.form-check-input[value="${value}"]`)
+                .parent()
+                .parent()
+                .remove();
+        }
+    })
 
     $('table.datatables').each(function () {
         const attr = name => $(this).attr(`data-${name}`) && $(this).attr(`data-${name}`) == 'off' ? false : true;

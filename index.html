@@ -2891,7 +2891,6 @@
                                                         <th>Baixa</th>
                                                         <th>Conta</th>
                                                         <th>Tipo</th>
-                                                        <th>Conta</th>
                                                         <th>Valor</th>
                                                         <th></th>
                                                     </tr>
@@ -3372,6 +3371,235 @@
                     <button class="confirm-button" data-bs-dismiss="modal">
                         <i class="fas fa-check"></i>
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen modal photo -->
+    <div class="modal fade photo-modal" id="photo-modal" tab-index="-1" aria-labelledby="photo-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <button id="photo-modal-prev">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div>
+                        <img src="" alt="">
+                    </div>
+
+                    <div>
+                        <button id="photo-modal-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional modal -->
+    <div class="modal fade" id="add-opt-modal" tab-index="-1" aria-labelledby="add-opt-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="title-box">
+                        <div class="d-flex align-items-center">
+                            <h5 class="title">Opcionais</h5>
+                            <i class="fas fa-question-circle" style="position: relative; bottom: 3px; left: 4px"></i>
+                        </div>
+
+                        <h6 class="subtitle">Inclua opcionais ao veículo</h6>
+                    </div>
+                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6" style="margin-top: 9px">
+                            <div class="collapse-toggler" data-bs-toggler="collapse" href="#opt-1" aria-expanded="false" role="button">
+                                <span class="title">Série/Popular</span>
+                            </div>
+
+                            <div class="collapse" id="opt-1">
+                                <ul>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="1a">
+                                        </div>
+                                        <span>Opcional 1</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="2a">
+                                        </div>
+                                        <span>Opcional 2</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="3a">
+                                        </div>
+                                        <span>Opcional 3</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="4a">
+                                        </div>
+                                        <span>Opcional 4</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="collapse-toggler" data-bs-toggler="collapse" href="#opt-2" aria-expanded="false" role="button">
+                                <span class="title">Conforto/Conveniência</span>
+                            </div>
+
+                            <div class="collapse" id="opt-2">
+                                <ul>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="1b">
+                                        </div>
+                                        <span>Opcional 1</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="2b">
+                                        </div>
+                                        <span>Opcional 2</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="3b">
+                                        </div>
+                                        <span>Opcional 3</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="4b">
+                                        </div>
+                                        <span>Opcional 4</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="collapse-toggler" data-bs-toggler="collapse" href="#opt-3" aria-expanded="false" role="button">
+                                <span class="title">Segurança</span>
+                            </div>
+
+                            <div class="collapse" id="opt-3">
+                                <ul>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="1c">
+                                        </div>
+                                        <span>Opcional 1</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="2c">
+                                        </div>
+                                        <span>Opcional 2</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="3c">
+                                        </div>
+                                        <span>Opcional 3</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="4c">
+                                        </div>
+                                        <span>Opcional 4</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="collapse-toggler" data-bs-toggler="collapse" href="#opt-4" aria-expanded="false" role="button">
+                                <span class="title">Desempenho</span>
+                            </div>
+
+                            <div class="collapse" id="opt-4">
+                                <ul>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="1d">
+                                        </div>
+                                        <span>Opcional 1</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="2d">
+                                        </div>
+                                        <span>Opcional 2</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="3d">
+                                        </div>
+                                        <span>Opcional 3</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="4d">
+                                        </div>
+                                        <span>Opcional 4</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="collapse-toggler" data-bs-toggler="collapse" href="#opt-5" aria-expanded="false" role="button">
+                                <span class="title">Outros</span>
+                            </div>
+
+                            <div class="collapse" id="opt-5">
+                                <ul>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="1e">
+                                        </div>
+                                        <span>Opcional 1</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="2e">
+                                        </div>
+                                        <span>Opcional 2</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="3e">
+                                        </div>
+                                        <span>Opcional 3</span>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input opt-check" type="checkbox" value="4e">
+                                        </div>
+                                        <span>Opcional 4</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="checked-opts">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button class="confirm-button" data-bs-dismiss="modal">
+                                <i class="fas fa-check"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
