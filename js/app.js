@@ -355,16 +355,9 @@ $(document).ready(() => {
     })
 
     $('.opt-check').on('click', function () {
-        console.log('aquii');
         const el = $(this).parent().parent();
         let value = $(this).val();
         let state = $(this).hasClass('checked');
-
-        console.log({
-            el,
-            value,
-            state
-        })
 
         if (state) {
             $('.checked-opts ul').append('<li>' + $(el).html() + '</li>');
