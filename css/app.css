@@ -1101,3 +1101,43 @@ table.dataTable {
     top: 2px;
     left: 3px;
 }
+
+#margin-lancamentos {
+    padding-left: 300px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    #margin-lancamentos {
+        padding-left: 240px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+    #margin-lancamentos {
+        padding-left: 275px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+    #margin-lancamentos {
+        padding-left: 390px;
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
+    #margin-lancamentos {
+        padding-left: 485px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1700px) {
+    #margin-lancamentos {
+        padding-left: 590px;
+    }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1800px) {
+    #margin-lancamentos {
+        padding-left: 685px;
+    }
+}

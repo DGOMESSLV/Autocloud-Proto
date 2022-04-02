@@ -159,10 +159,17 @@ $(document).ready(() => {
     });
 
     $('.block-btn[data-type="edit"]').click(function () {
+        let height = $(this).outerHeight() + 'px';
+        $(this).css('height', height);
+
         $(this).toggleClass('fa-edit fa-check');
 
-        if ($(this).attr('style') && $(this).attr('style').split(';').length > 2) {
-            $(this).removeAttr('style');
+        if ($(this).hasClass('fa-edit')) {
+            $(this).css({
+                background: '',
+                transition: '.3s linear',
+                color: '',
+            });
 
             if ($(this).hasClass('pos-xs-absolute')) {
                 $(this).css({
@@ -172,10 +179,8 @@ $(document).ready(() => {
         } else {
             $(this).css({
                 background: 'rgb(var(--bs-primary-rgb))',
-                fontSize: '1.2rem',
-                color: '#fff',
-                padding: '.4rem',
-                transition: '0',
+                transition: '.3s linear',
+                color: '#fff'
             });
         }
     });
@@ -383,4 +388,13 @@ $(document).ready(() => {
             language: window.lang.datatables[language],
         });
     });
+
+    $('.lancamentos-block-b').click(e => {
+        const context = $(e.target);
+        const targetClasses = ['lancamentos-block-b', 'col-12', 'launch-container'];
+
+        if ($(context).hasClass(targetClasses[0]) || $(context).hasClass(targetClasses[1]) || $(context).hasClass(targetClasses[2])) {
+            $(context).find('.expand-collapse-2').click()
+        }
+    })
 });

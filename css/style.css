@@ -155,12 +155,13 @@ body {
 
 .tab-toggler {
     font-size: 14px;
-    padding: .5rem 1rem;
+    padding: .5rem .8rem;
     border-radius: .3125rem;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin: 0 .1rem;
 }
 
 .tab-toggler i {
@@ -498,13 +499,13 @@ body {
 }
 
 #tenth-block .file:not(.active) .fa-link {
-    background: #4d4d4d;
-    color: #666;
+    color: transparent;
+    background: url('../assets/images/file_unchecked.svg');
 }
 
 #tenth-block .file.active .fa-link {
-    color: var(--gray);
-    background: #fff;
+    color: transparent;
+    background: url('../assets/images/file_checked.svg');
 }
 
 #tenth-block :not(.active) .filename {
@@ -521,8 +522,8 @@ body {
 }
 
 #tenth-block .file:not(.active):hover .fa-link {
-    color: rgb(var(--bs-primary-rgb));
-    background: #fff;
+    color: transparent;
+    background: url('../assets/images/file_checked.svg');
 }
 
 @media screen and (min-width: 1200px) {
@@ -670,6 +671,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: .3s ease-out;
+    min-height: 30px !important;
 }
 
 .block-btn:hover {
@@ -688,7 +690,7 @@ body {
 }
 
 .profile-card:hover {
-    filter: brightness(1.5);
+    background: #4C4C4C;
 }
 
 .profile-card .fa-times:hover {
@@ -710,7 +712,6 @@ body {
 
 .profile-card .badge-round:hover {
     background: rgb(var(--bs-primary-rgb));
-    filter: brightness(.8) !important;
 }
 
 .before-danger .rounded,
