@@ -623,7 +623,6 @@ body {
     color: rgb(var(--bs-danger-rgb));
     opacity: 0;
     font-size: .875rem;
-    transition .2s linear;
 }
 
 @media screen and (max-width: 1400px) {
@@ -787,7 +786,7 @@ body {
 
 .custom-table thead tr th:nth-last-child(1) {
     border-top-right-radius: .4rem;
-    border-bottom-rught-radius: .4rem;
+    border-bottom-right-radius: .4rem;
 }
 
 .custom-table thead tr {
@@ -927,10 +926,6 @@ body {
         height: 60px;
         position: absolute;
         left: 180px
-    }
-
-    .header-sec {
-        /*margin-top: 61px;*/
     }
 }
 
@@ -1349,19 +1344,19 @@ body {
 
 @media screen and (min-width: 1340px) and (max-width: 1422px) {
     .to-up-6 {
-        bottom: calc(var(--base-spacer) * 5.8 !important;
+        bottom: calc(var(--base-spacer) * 5.8) !important;
     }
 }
 
 @media screen and (min-width: 1422px) and (max-width: 1488px) {
     .to-up-6 {
-        bottom: calc(var(--base-spacer) * 5.3 !important;
+        bottom: calc(var(--base-spacer) * 5.3) !important;
     }
 }
 
 @media screen and (min-width: 1488px) and (max-width: 1799px) {
     .to-up-6 {
-        bottom: calc(var(--base-spacer) * 5.3 !important;
+        bottom: calc(var(--base-spacer) * 5.3) !important;
     }
 }
 
