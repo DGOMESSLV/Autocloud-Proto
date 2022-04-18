@@ -251,18 +251,6 @@ $(document).ready(() => {
         $(root).find('.icon').removeAttr('style');
     });
 
-    $('.form-check-input').click(function (e) {
-        e.preventDefault();
-    });
-
-    $('.form-switch .form-check-input').click(function () {
-        $(this).toggleClass('checked')
-    });
-
-    $('.form-check .form-check-input').click(function () {
-        $(this).toggleClass('checked')
-    });
-
     $('.navbar-toggler').click(() => {
         let screenWidth = $(window).width();
 
@@ -359,10 +347,10 @@ $(document).ready(() => {
         $(target).toggleClass('show');
     })
 
-    $('.opt-check').on('click', function () {
+    $('.opt-check').on('change', function () {
         const el = $(this).parent().parent();
         let value = $(this).val();
-        let state = $(this).hasClass('checked');
+        let state = $(this).is(':checked');
 
         if (state) {
             $('.checked-opts ul').append('<li>' + $(el).html() + '</li>');
